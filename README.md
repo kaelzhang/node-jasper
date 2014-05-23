@@ -1,10 +1,10 @@
-# minicry [![NPM version](https://badge.fury.io/js/minicry.svg)](http://badge.fury.io/js/minicry) [![Build Status](https://travis-ci.org/kaelzhang/node-minicry.svg?branch=master)](https://travis-ci.org/kaelzhang/node-minicry) [![Dependency Status](https://gemnasium.com/kaelzhang/node-minicry.svg)](https://gemnasium.com/kaelzhang/node-minicry)
+# jasper [![NPM version](https://badge.fury.io/js/jasper.svg)](http://badge.fury.io/js/jasper) [![Build Status](https://travis-ci.org/kaelzhang/node-jasper.svg?branch=master)](https://travis-ci.org/kaelzhang/node-jasper) [![Dependency Status](https://gemnasium.com/kaelzhang/node-jasper.svg)](https://gemnasium.com/kaelzhang/node-jasper)
 
-Minicry is an elegant template engine.
+Jasper is an elegant template engine.
 
 ## Install
 
-index.minicry
+index.jasp
 ```html
 html
   body
@@ -14,12 +14,12 @@ html
 ## Usage
 
 ```js
-var minicry = require('minicry');
-minicry.register('facade', function(name){
+var jasper = require('jasper');
+jasper.register('facade', function(name){
   return '<script>facade({mod: "' + name + '"});</script>';
 });
 
-minicry.compile(fs.readFileSync('index.minicry'));
+jasper.compile(fs.readFileSync('index.jasper'));
 ```
 
 ```html
